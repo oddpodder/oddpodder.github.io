@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/final project/css/style.css"
+    />
+  </head>
+  <div class="nav">
+    <a href="Homepage.html"> Home</a>
+    <a href="Destination page.html">Destinations</a>
+    <a href="Subscribe.html">Subscribe</a>
+    <a href="Contact Us.html">Contact Us</a>
+    <a href="About.html">About</a>
+  </div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      margin: 0;
+    }
+    .container {
+      background-image: url(background.jpeg);
+      background-size: cover;
+      background-position: center;
+    }
+    .container {
+      height: 100vh;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: calc(100%); /* subtract padding from viewport width */
+      margin: 0 auto; /* center horizontally */
+      box-sizing: border-box; /* include padding in width calculation */
+    }
+
+    form,
+    h1 {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    button[type="submit"] {
+      margin-left: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Contact Us!</h1>
+      <form
+        target="_blank"
+        action="https://formsubmit.co/01eded8c52c4e7ac6b46a6692f8dbfb8"
+        method="POST"
+      >
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="col">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="phone"
+                class="form-control"
+                placeholder="Phone"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea
+            placeholder="Your Message"
+            class="form-control"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Submit Form</button>
+      </form>
+    </div>
+  </body>
+</html>
